@@ -4,4 +4,9 @@ class RestaurantPolicy < ApplicationPolicy
       scope.all
     end
   end
+
+  # everyone can access show endpoint
+  def show?
+    true
+  end
 end
